@@ -1,4 +1,4 @@
-package com.onlywjt.learning.staticLearn;
+package com.onlywjt.learning.oop.staticLearn;
 
 /**
  * @author onlyWjt
