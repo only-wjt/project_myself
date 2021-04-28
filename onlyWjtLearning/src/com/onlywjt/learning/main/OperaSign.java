@@ -1,6 +1,5 @@
 package com.onlywjt.learning.main;
 
-import com.onlywjt.learning.opera.Think;
 import org.junit.Test;
 
 import java.util.*;
