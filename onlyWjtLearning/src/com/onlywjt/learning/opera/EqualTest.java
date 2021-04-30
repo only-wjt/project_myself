@@ -1,5 +1,7 @@
 package com.onlywjt.learning.opera;
 
+import java.util.Random;
+
 /**
  * @author onlyWjt
  * @date 2021年04月28日 21:27
@@ -36,3 +38,49 @@ class Thank{
 class FloatCla{
     float dd;
 }
+class equal的用法注意{
+    public static void main(String[] args) {
+        equal的用法注意 equal的用法注意 = new equal的用法注意();
+        equal的用法注意.equal的用法注意();
+    }
+    public void equal的用法注意(){
+        //整型在-127~128之间的数值，会存放在缓存里面，所以会出现下面这种情况
+        int i = 128;
+        int i1 = 128;
+        System.out.println(i == i1);
+        Integer integer = new Integer(129);
+        Integer integer1 = new Integer(129);
+        //所以此处应该用equals去比较
+        //System.out.println(integer == integer1 );
+    }
+}
+
+class equals的另一种现象{
+    int value;
+    public static void main(String[] args) {
+        equals的另一种现象 value1 = new equals的另一种现象();
+        equals的另一种现象 value2 = new equals的另一种现象();
+        value1.value = value2.value = 100;
+        //此处输出flase，是因为equals方法里面比较的是引用地址是否相同，不会比较里面的内容，所以既要比较应用地址，还要比较内容，需要重写equals方法
+        System.out.println(value1.equals(value2));
+    }
+}
+class 抛硬币{
+    public static void main(String[] args) {
+        Random random = new Random();
+        int i = random.nextInt(2);
+        if (i == 0) {
+            System.out.println("反面");
+        } else if (i == 1) {
+            System.out.println("正面");
+        }
+    }
+}
+
+
+
+
+
+
+
+
